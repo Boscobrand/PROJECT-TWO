@@ -1,5 +1,6 @@
 import React from "react"
 import Axios from "axios"
+import APImeals from "./Components/APImeals"
 
 const App = () => {
     const APP_ID = "59afb331"
@@ -15,7 +16,10 @@ const App = () => {
     return(
         <div className="APP">
             <h1 onClick={getData}> API Development Test</h1>
-        </div>
+
+            <h3><APImeals data={getData}/></h3>
+            </div>
+
     );
 }
 export default App;
