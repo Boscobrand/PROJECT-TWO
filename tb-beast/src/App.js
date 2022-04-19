@@ -1,14 +1,14 @@
 import React from "react"
-import Axios from "axios"
+import Recipe from "./Components/Recipe"
 
-import APIedmam from "./Components/APIedmam"
 
 const App = () => {
    
 
     return(
         <div className="APP">
-            <h1><APIedmam/></h1>
+            <h1>RECIPE API TEST</h1>
+            <h1><Recipe/></h1>
 
     
             </div>
