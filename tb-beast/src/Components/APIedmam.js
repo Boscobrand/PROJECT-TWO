@@ -15,8 +15,13 @@ const APIedmam = () => {
 
     return(
         <div className="APP">
-            <h1 onClick={getData}> EDMAM API Development Test</h1>
-            </div>
+            <h1>EDMAM API Development Test</h1>
+            <button 
+                onClick={getData}
+                className="RedButton"
+                type="submit">Let's Go RED</button>
+
+        </div>
 
     );
 }
