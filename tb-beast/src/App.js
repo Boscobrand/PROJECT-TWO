@@ -1,5 +1,6 @@
 import React from "react"
 import Recipe from "./Components/Recipe"
+// import R2 from "./Components/R2"
 
 
 const App = () => {
