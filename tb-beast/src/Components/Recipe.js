@@ -5,9 +5,8 @@ import axios from "axios"
 
 // }
 
-function Recipe(props) {
+function Recipe() {
 
-// const Recipe = (props) => {
     const[recipes,setRecipes] = useState([]);
     
     const APP_ID = "59afb331"
@@ -21,6 +20,9 @@ function Recipe(props) {
         console.log(result.data)
     }
 
+    
+
+
     return(
         <div className="Initiate">
             <h1>TEST</h1>
@@ -29,12 +31,18 @@ function Recipe(props) {
                 className="WhiteButton"
                 type="submit">Let's Go White</button>
 
-            <div className="recipe">
+            <div className="recipeBox">
+                {/* <img className="pic"
+                    src={recipes.data.image} alt="food"></img>
+                <h3 className="name">{recipes.data.label}</h3>
+                <p className="url">{recipes.data.url}</p>
+                <p className="ingredients">{recipes.data.url}</p>
+
+
                
                 {/* <div className="name">{label}</div> */}
                 {/* (url, image, ingredients) */}
-          
-                
+
 
             </div>
         </div>
