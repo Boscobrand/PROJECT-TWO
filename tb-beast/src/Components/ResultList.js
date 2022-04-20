@@ -1,13 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Recipe from ".Components/Recipe"
+import Recipe from "./Components/Recipe"
 
 function ResultList(props) {
     let list = props.data.map(recipe => {
         return (
             <p className="recipeList" key={recipe.label}>
             <Link to={recipe.label}>
-                {recipe.name}
+                {recipe.url}
             </Link>
             </p>
         )
@@ -19,6 +19,7 @@ function ResultList(props) {
         </div>
     )
 }
+console.log({list})
 
 
 
