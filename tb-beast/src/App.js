@@ -6,7 +6,6 @@ import "./App.css"
 
 
 const APP = () => {
-   
 
     return(
         <div className="APP">
