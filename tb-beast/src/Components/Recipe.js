@@ -1,4 +1,4 @@
-import React, {useState} from "react"
+import React, {useState} from 'react'
 import {Link} from "react-router-dom"
 import axios from "axios"
 
@@ -19,12 +19,12 @@ function Recipe() {
         console.log(result.data.hits)
     }
 
-    // const recipeLog = () => {
-    //     console.log(recipes[0].recipe.image)
-    //     console.log(recipes[0].recipe.label)
-    //     console.log(recipes[0].recipe.url)
-    //     console.log(recipes[0].recipe.ingredients)
-    // }
+    const recipeLog = () => {
+        console.log(recipes[0].recipe.image)
+        console.log(recipes[0].recipe.label)
+        console.log(recipes[0].recipe.url)
+        console.log(recipes[0].recipe.ingredients)
+    }
 
     
     return(
@@ -34,10 +34,14 @@ function Recipe() {
                 onClick={getData}
                 className="WhiteButton"
                 type="submit">Let's Go White</button>
+        
+            <button onClick={recipeLog}>very tiny button</button>   
+
         </div>
     );
-    }
+  
 
+    }
 
 const Transfer = () => {
     <Link to={"/ResultList/" + Recipe}></Link>

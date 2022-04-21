@@ -2,53 +2,80 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 
+
 function ResultList(props) {
+     
     
-    let list = props.recipes.recipe.map(recipes => {
-        return (
-            <p className="recipeList" key={recipes.recipe.label}>
-            <Link to={recipes.recipe.label}>
-                {recipes.recipe.url}
+    
+    console.log(props.recipes)
 
-            </Link>
-            </p>
-        )
-
-    })
-    return (
-        <div>
-            {list}
-        </div>
-    )
-}
+     return(
+         <div className="recipeBox">
+            {/* <div className="name">{recipes.recipes.label}</div> */}
+            {props.recipes.map(recipe => {
+                return(
+                    <div> 
+                        {recipe.recipe.label}
+                    </div>
+                )
+            })}
 
 
-        //             <div className="recipeBox">
+
+            </div>
+
+     )
+
+
+
+
+
+
+
+
+
+
+
+
+
+//     let list = props.recipes.recipe.map(recipes => {
+//         return (
+//             <p className="recipeList" key={recipes.recipe.label}>
+//             <Link to={recipes.recipe.label}>
+//                 {recipes.recipe.url}
+
+//             </Link>
+//             </p>
+//         )
+
+//     })
+//     return (
+//         <div>
+//             {list}
+//         </div>
+//     )
+// }
+
+
+//         //             <div className="recipeBox">
                     
                     
                     
-        //             <img className="pic"
-        //                 src={recipes?recipes[0].recipe.image:""} alt="food"></img>
+//         //             <img className="pic"
+//         //                 src={recipes?recipes[0].recipe.image:""} alt="food"></img>
 
-        //             {/* <h3 className="name">{recipes?recipes[0].recipe.label:""}</h3>
+//         //             <h3 className="name">{recipes?recipes[0].recipe.label:""}</h3>
 
-        //             <p className="url">{recipes?recipes[0].recipe.url:""}</p>
+//         //             <p className="url">{recipes?recipes[0].recipe.url:""}</p>
 
-        //             <p className="ingredients">{recipes?recipes[0].recipe.ingredients:""}</p> */}
+//         //             <p className="ingredients">{recipes?recipes[0].recipe.ingredients:""}</p>
 
-        //             <button onClick={recipeLog}>very tiny button</button>
+//         //             <button onClick={recipeLog}>very tiny button</button>
                 
 
 
-        //     </div>
-        // </div>
+//         //     </div>
+//         // </div>
 
-
-
-
-
-
-
-
-
+}
 export default ResultList;
