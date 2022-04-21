@@ -2,7 +2,8 @@ import React from "react"
 import Recipe from "./Components/Recipe"
 import Header from "./Components/Header"
 import "./App.css"
-// import ResultList from "./Components/ResultList"
+import ResultList from "./Components/ResultList"
+
 
 
 const APP = () => {

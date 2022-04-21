@@ -5,10 +5,11 @@ body{
 }
 .Header{
   display: grid;
-  font-family:'Times New Roman', Times, serif, 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+  font-family: 'Source Serif Pro', serif;
 }
 
 .Headline {
+  font-family: 'Abril Fatface', cursive;
   justify-content: center;
   align-items: center;
   text-align:center;

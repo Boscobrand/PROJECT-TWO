@@ -1,7 +1,6 @@
 import React, {useState} from "react"
+import {Link} from "react-router-dom"
 import axios from "axios"
-
-
 
 // }
 
@@ -18,19 +17,16 @@ function Recipe() {
         const result = await axios.get(url);
         setRecipes(result.data.hits)
         console.log(result.data.hits)
-        
     }
 
-    const recipeLog= () => {
-        console.log(recipes[0].recipe.image)
-        console.log(recipes[0].recipe.label)
-        console.log(recipes[0].recipe.url)
-        console.log(recipes[0].recipe.ingredients)
-    }
+    // const recipeLog = () => {
+    //     console.log(recipes[0].recipe.image)
+    //     console.log(recipes[0].recipe.label)
+    //     console.log(recipes[0].recipe.url)
+    //     console.log(recipes[0].recipe.ingredients)
+    // }
 
-    //if...else condition? option1:option2 
-
-
+    
     return(
         <div className="Initiate">
             <h1>TEST</h1>
@@ -38,24 +34,13 @@ function Recipe() {
                 onClick={getData}
                 className="WhiteButton"
                 type="submit">Let's Go White</button>
-
-            <div className="recipeBox">
-                    <img className="pic"
-                        src={recipes?recipes[0].recipe.image:""} alt="food"></img>
-
-                    {/* <h3 className="name">{recipes?recipes[0].recipe.label:""}</h3>
-
-                    <p className="url">{recipes?recipes[0].recipe.url:""}</p>
-
-                    <p className="ingredients">{recipes?recipes[0].recipe.ingredients:""}</p> */}
-
-                    <button onClick={recipeLog}>very tiny button</button>
-                
-
-
-            </div>
         </div>
-
     );
+    }
+
+
+const Transfer = () => {
+    <Link to={"/ResultList/" + Recipe}></Link>
 }
-export default Recipe;
+
+export default Recipe
