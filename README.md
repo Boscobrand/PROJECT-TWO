@@ -94,7 +94,7 @@ Mapping data to props can be challenging at times.  This project was no exceptio
 Issue 1: router.js:5 Uncaught Error: useRoutes() may be used only in the context of a <Router> component.
   
   Solution:
-    - Wrappoing the App in <Router> in the index file instead of <React.StrictMode>
+    - Wrapping the App in <Router> in the index file instead of <React.StrictMode>
     - For example: root.render(<Router><App /></Router>);`
   
 Issue 2: uncaught TypeError: Cannot read properties of undefined (reading 'filter')
