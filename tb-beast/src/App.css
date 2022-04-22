@@ -3,6 +3,47 @@ body{
   max-width: 1000px;
   background-color: papayawhip;
 }
+
+nav {
+  width:1000px;
+  background: maroon;
+  color: papayawhip;
+  font-family: 'Abril Fatface', cursive;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+nav h1 {
+  margin: 0;
+  font-family: 'Abril Fatface', cursive;
+  justify-content: space-between;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+nav a {
+  color: white;
+  display: inline-block;
+  padding: 5px;
+  font-size: 1.2em;
+  text-decoration: none;
+}
+
+nav a:hover {
+  background: #282c34;
+}
+
+h2 {
+  font-family: 'Source Serif Pro', serif;
+}
+
+p {
+  font-family: 'Source Serif Pro', serif;
+}
+
+
 .Header{
   display: grid;
   font-family: 'Source Serif Pro', serif;
@@ -15,6 +56,7 @@ body{
   align-items: center;
   text-align:center;
   margin-left: 50px;
+  text-shadown:0 0.5rem 0.5rem #555;
 }
 hr {
   border: 1px solid maroon;
@@ -128,6 +170,7 @@ hr {
   padding:0 0 15px 0;
   margin-left: 500px;
   border-bottom:2px solid rgba(173, 173, 173, 0.979);
+  box-shadow: 2rem 3rem 5rem #aaa;
 }
 
 .recipeCard {

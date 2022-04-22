@@ -1,11 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Header from "./Header"
 
 
 
 function ResultList(props) {
      
      return(
+
          <div className="recipeBox">
             {props.recipes.map(recipe => {
                 return(

@@ -3,6 +3,7 @@ import { Route, Routes, Link, Navigate } from "react-router-dom"
 import Recipe from "./Components/Recipe"
 import Header from "./Components/Header"
 import Footer from "./Components/Footer"
+import About from "./Components/About"
 import ResultList from "./Components/ResultList"
 import axios from "axios"
 import "./App.css"
@@ -43,25 +44,30 @@ const APP = () => {
     return(
 
         <div className="APP">
- 
+            <nav>
+                <Link to ="/"><h4>W&D</h4></Link>
+                <div>
+                    <Link to="/"><h4>Home</h4></Link>
+                    <Link to="/About"><h4>About</h4></Link>
+                </div>
+            </nav>
+            <main>
 
-            
             <Routes>
                 <Route path = "/Header/" element={<Header />}/>   
-                <Route path = "/" element = {<Header />}/>
+                <Route path = "/" element = {<Header />}></Route>
+                <Route path = "/About/" element={<About />}></Route>
+                <Route path = "/Footer/" element = {<Footer />} />
                 <Route path = "/ResultList/:Recipe" element={<Recipe/>}/>
                 <Route path = "/ResultList/" element={<ResultList recipes={recipes}/>}/>
-                <Route path = "/Footer/" element = {<Footer />} />
+           
             </Routes>
 
 
             <div><button onClick={getData1} className="WhiteButton" type="submit">Let's Go White</button></div>               
-            
             <div><button onClick={getData2} className="RedButton" type="submit">Let's Go Red</button></div>
 
-
-
-
+            </main>
         </div>
 
     );
