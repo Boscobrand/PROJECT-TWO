@@ -5,13 +5,7 @@ import {Link } from "react-router-dom"
 function Header (props) {
     return(
         <div className = "Header">
-                        <nav>
-                <Link to ="/"><h4>W&D</h4></Link>
-                <div>
-                    <Link to="/"><h4>Home</h4></Link>
-                    <Link to="/About"><h4>About</h4></Link>
-                </div>
-            </nav>
+
             <div className="Headline">
                 <h1> Wine & Dine </h1>
             </div>

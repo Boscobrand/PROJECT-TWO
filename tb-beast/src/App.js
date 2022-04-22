@@ -1,6 +1,5 @@
 import React, {useState} from "react"
 import { Route, Routes, Link } from "react-router-dom"
-import Recipe from "./Components/Recipe"
 import Header from "./Components/Header"
 import Footer from "./Components/Footer"
 import About from "./Components/About"
@@ -29,13 +28,11 @@ const APP = () => {
         const getData1 = async () => {
             const result = await axios.get(url1);
             setRecipes(result.data.hits)
-            console.log(result.data.hits)
         }
         
         const getData2 = async () => {
             const result = await axios.get(url2);
             setRecipes(result.data.hits)
-            console.log(result.data.hits)
         }
 
     

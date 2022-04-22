@@ -141,7 +141,7 @@ hr {
   font-weight:300px;
   float:right;
   margin-right:250px;
-  margin-top: -150px;
+  margin-top: 0px;
 }
 
 .RedButton {
@@ -160,7 +160,7 @@ hr {
   font-size:25px;
   font-weight:350px;
   margin-left: 300px;
-  margin-top: -150px;
+  margin-top: 0px;
 
 }
 
@@ -234,5 +234,24 @@ hr {
   color: white;
   height:20px;
   width: 900px;
+
+}
+
+.aboutlead {
+  font-family: 'Abril Fatface', cursive; ;
+  font-size:40px;
+  padding:20px;
+  text-align: center;
+}
+
+#x {
+  font-family: 'Source Serif Pro', serif;
+  font-size: 25px;
+  font-weight:300;
+  margin:100px;
+  margin-top:20px;
+  line-height: normal;
+  
+
 
 }
