@@ -48,7 +48,7 @@ hr {
   align-items: left;
   text-align: left;
   font-size: 17px;
-  margin-left: 50px;
+  margin-left: 100px;
   margin-top: 70px;
 }
 
@@ -96,13 +96,17 @@ hr {
   font-size:25px;
   font-weight:300px;
   float:right;
-  margin-right:20px;
-
+  margin-right:250px;
+  margin-top: -150px;
 }
 
 .RedButton {
+  display:flex;
   color:white;
   background-color: maroon;
+  text-align:center;
+  align-items: center;
+  justify-content: center;
   height:50px;
   width: 200px;
   border-style: groove;
@@ -110,8 +114,9 @@ hr {
   border-color:rgb(36, 0, 0);
   font-family: 'Times New Roman', Times, serif;
   font-size:25px;
-  font-weight:300px;
-  margin-left:20px;
+  font-weight:350px;
+  margin-left: 300px;
+  margin-top: -150px;
 
 }
 
@@ -121,7 +126,7 @@ hr {
   flex-wrap:wrap-reverse;
   width: 600px;
   padding:0 0 15px 0;
-  margin-left: px;
+  margin-left: 500px;
   border-bottom:2px solid rgba(173, 173, 173, 0.979);
 }
 
@@ -163,6 +168,7 @@ hr {
   display:inline-flex;
   background-color:white;
   align-items: left;
+  margin-left:5px;
 }
 
 .i-button{
@@ -170,4 +176,13 @@ hr {
   background-color:maroon;
   color:white;
   align-items: right;
+  justify-content: flex-start;
+}
+
+.menu {
+  Background-color:black;
+  color: white;
+  height:20px;
+  width: 900px;
+
 }

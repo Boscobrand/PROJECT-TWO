@@ -2,6 +2,7 @@ import React, {useEffect, useState} from "react"
 import { Route, Routes, Link, Navigate } from "react-router-dom"
 import Recipe from "./Components/Recipe"
 import Header from "./Components/Header"
+import Footer from "./Components/Footer"
 import ResultList from "./Components/ResultList"
 import axios from "axios"
 import "./App.css"
@@ -43,15 +44,23 @@ const APP = () => {
 
         <div className="APP">
  
-            <div><button onClick={getData1} className="WhiteButton" type="submit">Let's Go White</button></div>               
-            <div><button onClick={getData2} className="RedButton" type="submit">Let's Go Red</button></div>
+
             
             <Routes>
-                <Route path = "Header" element={<Header />}/>   
+                <Route path = "/Header/" element={<Header />}/>   
                 <Route path = "/" element = {<Header />}/>
                 <Route path = "/ResultList/:Recipe" element={<Recipe/>}/>
                 <Route path = "/ResultList/" element={<ResultList recipes={recipes}/>}/>
+                <Route path = "/Footer/" element = {<Footer />} />
             </Routes>
+
+
+            <div><button onClick={getData1} className="WhiteButton" type="submit">Let's Go White</button></div>               
+            
+            <div><button onClick={getData2} className="RedButton" type="submit">Let's Go Red</button></div>
+
+
+
 
         </div>
 
