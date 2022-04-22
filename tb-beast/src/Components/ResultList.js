@@ -5,8 +5,6 @@ import { Link } from 'react-router-dom';
 
 function ResultList(props) {
      
-    console.log(props.recipes)
-
      return(
          <div className="recipeBox">
             {props.recipes.map(recipe => {
@@ -15,9 +13,10 @@ function ResultList(props) {
                         <div className="name">{recipe.recipe.label}</div>
                         <img src={recipe.recipe.image} alt={recipe.recipe.label} className="pic"/>
                         <div><a href={recipe.recipe.url} target="_blank" className="B-url" rel="noopener noreferrer">URL</a></div>
-                        <div><button className="i-button">Ingredients</button><div>
+                        <div><button className="i-button">Ingredients</button></div>
                     </div>    
                 )
+            
             })}
             
         </div>
