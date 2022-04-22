@@ -5,6 +5,10 @@
 Project Description:
 Whether you are heading out to enjoy dinner at a restaurant or enjoying a meal at home with friends, your choice of wine to complement your meal lis always an important consideration. So here's an app that takes the guesswork out of matching up what wine goes with what meals, so you can enjoy a perfect pairing and a pleasant evening.
 
+The app is deployed on Surge.  
+You can find it here:  https://tb-project-2.surge.sh/
+
+
 ## Wireframes:
 
 
