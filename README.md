@@ -15,15 +15,15 @@ You can find it here:  https://tb-project-2.surge.sh/
 D P2 WF - MVP .pdf](https://github.com/Boscobrand/PROJECT-TWO/files/8537095/UPDATED.P2.WF.-.MVP.pdf)
 
 ## User Stories:
-I want to be able to quickly choose a recipe that pairs well with a style of wine I am in the mood for.
-I want a short list of appealing recipes
-I'd like to scan a quick wine list that recommends compatible wine for me to consider
-I want a simple to use interface
+- I want to be able to quickly choose a recipe that pairs well with a style of wine I am in the mood for.
+- I want a short list of appealing recipes
+- I'd like to scan a quick wine list that recommends compatible wine for me to consider
+- I want a simple to use interface
 
 ## MVP Goals:
-MVP priority focus will be on recipe API, secondary on wine API
-Establish 1 - 2 page delivery, with one touch selectors
-Stretch goals: Enhanced Styling
+- MVP priority focus will be on recipe API, secondary on wine API
+- Establish 1 - 2 page delivery, with one touch selectors
+- Stretch goals: Enhanced Styling
 
 ## Component Development:
 
