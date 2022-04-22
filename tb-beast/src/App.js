@@ -1,5 +1,5 @@
-import React, {useEffect, useState} from "react"
-import { Route, Routes, Link, Navigate } from "react-router-dom"
+import React, {useState} from "react"
+import { Route, Routes, Link } from "react-router-dom"
 import Recipe from "./Components/Recipe"
 import Header from "./Components/Header"
 import Footer from "./Components/Footer"
@@ -32,15 +32,13 @@ const APP = () => {
             console.log(result.data.hits)
         }
         
-        
         const getData2 = async () => {
             const result = await axios.get(url2);
             setRecipes(result.data.hits)
             console.log(result.data.hits)
         }
 
-       
-
+    
     return(
 
         <div className="APP">
@@ -51,21 +49,21 @@ const APP = () => {
                     <Link to="/About"><h4>About</h4></Link>
                 </div>
             </nav>
+            <Header getData1={getData1} getData2={getData2}/>
             <main>
 
             <Routes>
-                <Route path = "/Header/" element={<Header />}/>   
-                <Route path = "/" element = {<Header />}></Route>
+  
                 <Route path = "/About/" element={<About />}></Route>
                 <Route path = "/Footer/" element = {<Footer />} />
-                <Route path = "/ResultList/:Recipe" element={<Recipe/>}/>
+                {/* <Route path = "/ResultList/:Recipe" element={<Recipe/>}/> */}
                 <Route path = "/ResultList/" element={<ResultList recipes={recipes}/>}/>
            
             </Routes>
 
 
-            <div><button onClick={getData1} className="WhiteButton" type="submit">Let's Go White</button></div>               
-            <div><button onClick={getData2} className="RedButton" type="submit">Let's Go Red</button></div>
+
+           
 
             </main>
         </div>
