@@ -2,6 +2,7 @@
 import React from 'react'
 
 
+
 function Header () {
     return(
         <div className = "Header">
@@ -9,6 +10,10 @@ function Header () {
                 <h1> Wine & Dine </h1>
             </div>
 
+            <div>
+                <hr />
+            </div>
+            
             <div className="Subhead">
                 <h2 id="A"> Recipe recommendations based on your choice of wine.</h2>
                 <h2 id="B" >Pair wine and food with the push of a button. </h2>
@@ -20,9 +25,12 @@ function Header () {
             </div>
 
             <div className="Righthand">
-                 <h3 id="E"> Food that pairs so well with wine</h3>
-                 <h3 id="F"> there will be nothing left...</h3>
+                 <h3 id="E"> Food that pairs so well</h3>
+                 <h3 id="F"> with wine there will be nothing left!</h3>
             </div>
+
+
+
         </div>
     )
 

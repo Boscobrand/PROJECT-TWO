@@ -5,77 +5,24 @@ import { Link } from 'react-router-dom';
 
 function ResultList(props) {
      
-    
-    
     console.log(props.recipes)
 
      return(
          <div className="recipeBox">
-            {/* <div className="name">{recipes.recipes.label}</div> */}
             {props.recipes.map(recipe => {
                 return(
-                    <div> 
-                        {recipe.recipe.label}
-                    </div>
+                    <div className = "recipeCard">
+                        <div className="name">{recipe.recipe.label}</div>
+                        <img src={recipe.recipe.image} alt={recipe.recipe.label} className="pic"/>
+                        <div><a href={recipe.recipe.url} target="_blank" className="B-url" rel="noopener noreferrer">URL</a></div>
+                        <div><button className="i-button">Ingredients</button><div>
+                    </div>    
                 )
             })}
-
-
-
-            </div>
+            
+        </div>
 
      )
-
-
-
-
-
-
-
-
-
-
-
-
-
-//     let list = props.recipes.recipe.map(recipes => {
-//         return (
-//             <p className="recipeList" key={recipes.recipe.label}>
-//             <Link to={recipes.recipe.label}>
-//                 {recipes.recipe.url}
-
-//             </Link>
-//             </p>
-//         )
-
-//     })
-//     return (
-//         <div>
-//             {list}
-//         </div>
-//     )
-// }
-
-
-//         //             <div className="recipeBox">
-                    
-                    
-                    
-//         //             <img className="pic"
-//         //                 src={recipes?recipes[0].recipe.image:""} alt="food"></img>
-
-//         //             <h3 className="name">{recipes?recipes[0].recipe.label:""}</h3>
-
-//         //             <p className="url">{recipes?recipes[0].recipe.url:""}</p>
-
-//         //             <p className="ingredients">{recipes?recipes[0].recipe.ingredients:""}</p>
-
-//         //             <button onClick={recipeLog}>very tiny button</button>
-                
-
-
-//         //     </div>
-//         // </div>
 
 }
 export default ResultList;

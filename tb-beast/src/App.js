@@ -40,18 +40,18 @@ const APP = () => {
        
 
     return(
-        <div className="APP">
-            <main>
-                <button onClick={getData1} className="WhiteButton" type="submit">Let's Go White</button>
-                <button onClick={getData2} className="RedButton" type="submit">Let's Go Red</button>
-            </main>
-                <Routes>
-                    <Route path = "Header" element={<Header />}/>
-                    <Route path = "/" element = {<Header />}/>
-                    <Route path="/ResultList/:Recipe" element={<Recipe/>}/>
-                    <Route path="/ResultList/"element={<ResultList recipes={recipes}/>}/>
-                </Routes>
 
+        <div className="APP">
+ 
+            <div><button onClick={getData1} className="WhiteButton" type="submit">Let's Go White</button></div>               
+            <div><button onClick={getData2} className="RedButton" type="submit">Let's Go Red</button></div>
+            
+            <Routes>
+                <Route path = "Header" element={<Header />}/>   
+                <Route path = "/" element = {<Header />}/>
+                <Route path = "/ResultList/:Recipe" element={<Recipe/>}/>
+                <Route path = "/ResultList/" element={<ResultList recipes={recipes}/>}/>
+            </Routes>
 
         </div>
 
