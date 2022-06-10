@@ -58,10 +58,6 @@ const APP = () => {
            
             </Routes>
 
-
-
-           
-
             </main>
         </div>
 

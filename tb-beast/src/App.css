@@ -189,19 +189,20 @@ hr {
 } 
 
 .pic {
-  display:flex;
-  align-items: center;
-  justify-items: center;
-  height: 210px;
-  width: 251px;
+  display:grid;
+  align-items:left;
+  justify-items: left;
+  height: 250px;
+  width: 350px;
+  margin-left: -85px;
   padding: 0px;
   object-fit: cover;
 }
 
 .name {
   display:flex;
-  font-family:'Times New Roman', Times, serif;
-  font-size:larger;
+  font-family:'Abril Fatface', cursive;
+  font-size:20px;
   font-weight:300;
   float: center;
   background-color: black;
@@ -214,9 +215,8 @@ hr {
   display:flex;
   background-color:papayawhip;
   width:80px;
-  text-align: center;
-  align-items: center;
-  margin-left:5px;
+  text-align: left;
+  align-items: left;
 }
 
 .i-button{

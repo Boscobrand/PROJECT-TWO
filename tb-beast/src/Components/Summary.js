@@ -5,7 +5,6 @@ import { Link }from 'react-router-dom'
 function ShowRecipe(props) {
     return(
         <div className="recipeHome">
-            <h3>Recipes that go so well with wine there will be nothing left!</h3>
             <div className= "recipeParent">
                 {props.recipe.map(recipe => (<div className= "recipeItem" key={recipe.image}>
                     <Link to={'/SUMMARYPAGE/'+ recipe.name} onClick={() => this.props.setrecipe(recipe)}>
